@@ -1,0 +1,1 @@
+# w6-d1-class-minitask
