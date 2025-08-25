@@ -2,11 +2,12 @@ import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router";
 
 // Component
+import { Navbar } from "../components/Navbar";
 
 // Pages
 import { Home } from "../pages/Home";
-import { Navbar } from "../components/Navbar";
 import { Counter } from "../pages/Counter";
+import { Todo } from "../pages/Todo";
 
 export const Router = () => {
   return (
@@ -16,6 +17,7 @@ export const Router = () => {
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="counter" element={<Counter />} />
+            <Route path="todo" element={<Todo />} />
           </Route>
         </Route>
       </Routes>

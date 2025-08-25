@@ -5,11 +5,14 @@ import "./assets/styles/index.css";
 
 // Context
 import CounterProvider from "./context/counter/CounterProvider.jsx";
+import TodoProvider from "./context/todo/TodoContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CounterProvider>
-      <Router />
+      <TodoProvider>
+        <Router />
+      </TodoProvider>
     </CounterProvider>
   </StrictMode>
 );
