@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { Router } from "./router/Router.jsx";
+import "./assets/styles/index.css";
 
-createRoot(document.getElementById('root')).render(
+// Context
+import CounterProvider from "./context/counter/CounterProvider.jsx";
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <CounterProvider>
+      <Router />
+    </CounterProvider>
+  </StrictMode>
+);
