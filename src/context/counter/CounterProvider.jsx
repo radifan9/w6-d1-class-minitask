@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { CounterContext } from "./CounterContext";
+import { counterContext as CounterContext } from "./counterContext";
 
 const initialState = { count: 0 };
 

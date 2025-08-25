@@ -2,4 +2,4 @@
 import { createContext } from "react";
 
 // This context will be used to share state
-export const CounterContext = createContext();
+export const counterContext = createContext();
